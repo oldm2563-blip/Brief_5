@@ -56,3 +56,13 @@ a{
     text-decoration: none;
     color: black;
 }
+h4{
+    color: white;
+}
+h5{
+    color: white;
+}
+footer{
+    background-color: #72533F;
+    height: 160px;
+}
