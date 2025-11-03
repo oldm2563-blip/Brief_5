@@ -1,3 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #EFB48E;
+}
+.Logo img{
+    width: 200px;
+    height: 200px;
+}
+.title{
+    text-align: center;
+}
+.Title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 120px;
+    padding-bottom: 50px;
+}
+.main-hub{
+    background-color: #FFD9AE;
+}
+.fi{
+    color: white;
 }
