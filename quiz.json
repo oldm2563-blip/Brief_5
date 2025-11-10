@@ -1,0 +1,104 @@
+[
+  {
+    
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "options": ["script", "style", "css", "link"],
+    "answer": "style"
+  },
+  {
+    
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["break", "br", "lb", "newline"],
+    "answer": "br"
+  },
+  {
+    
+    "question": "What does CSS stand for?",
+    "options": [
+      "Creative Style System",
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Colorful Style Syntax"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    
+    "question": "Which property is used to change the background color?",
+    "options": ["color", "background-color", "bgcolor", "background"],
+    "answer": "background-color"
+  },
+  {
+    
+    "question": "Which CSS property controls the text size?",
+    "options": ["font-style", "text-size", "font-size", "text-style"],
+    "answer": "font-size"
+  },
+  {
+    
+    "question": "How do you center a div horizontally using CSS Flexbox?",
+    "options": [
+      "justify-content: center;",
+      "align-items: center;",
+      "text-align: center;",
+      "display: block;"
+    ],
+    "answer": "justify-content: center;"
+  },
+  {
+    
+    "question": "Which of the following is NOT a JavaScript data type?",
+    "options": ["Number", "String", "Boolean", "Float"],
+    "answer": "Float"
+  },
+  {
+    
+    "question": "How do you write 'Hello World' in an alert box?",
+    "options": [
+      "alertBox('Hello World');",
+      "msg('Hello World');",
+      "alert('Hello World');",
+      "msgBox('Hello World');"
+    ],
+    "answer": "alert('Hello World');"
+  },
+  {
+    
+    "question": "Which operator is used to assign a value to a variable?",
+    "options": ["=", "==", "===", ":"],
+    "answer": "="
+  },
+  {
+    
+    "question": "How do you create a function in JavaScript?",
+    "options": [
+      "function:myFunction()",
+      "function myFunction()",
+      "create myFunction()",
+      "def myFunction()"
+    ],
+    "answer": "function myFunction()"
+  },
+  {
+    
+    "question": "How can you add a comment in JavaScript?",
+    "options": [
+      "'This is a comment",
+      "// This is a comment",
+      "!-- This is a comment --",
+      "# This is a comment"
+    ],
+    "answer": "// This is a comment"
+  }
+]
