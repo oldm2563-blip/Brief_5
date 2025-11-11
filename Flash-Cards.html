@@ -25,9 +25,18 @@
     </div>
     <div class="d-flex justify-content-center">
     <form class="d-flex justify-content-center flex-column w-50 gap-3">
+        <input type="text" id="inputcategory" placeholder="Add new category">
+        <button id="add-category-btn" type="button" class="flash-btn">Add Category</button>
+    </form>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+    <form class="d-flex justify-content-center flex-column w-50 gap-3">
         <input type="text" id="question" placeholder="enter You're Question">
         <input type="text" id="answer" placeholder="enter You're answer">
-        <button id="createflashcard" class="flash-btn">Add The FlashCard</button>
+        <select id="filter">
+            <option value="" disabled selected>All</option>
+        </select>
+        <button type="button" id="createflashcard" class="flash-btn">Add The FlashCard</button>
     </form>
     </div>
     <div class="d-flex justify-content-center">
