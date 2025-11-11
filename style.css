@@ -47,7 +47,16 @@ body{
 .F-Q{
     gap: 60px;
 }
-a{
+.box1 a{
+    border: 1px solid brown;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #BE8E70;
+    text-decoration: none;
+    color: black;
+}
+.box2 a{
     border: 1px solid brown;
     width: 100px;
     text-align: center;
@@ -62,7 +71,87 @@ h4{
 h5{
     color: white;
 }
+.the-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-navbar a{
+    padding: 5px 50px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #72533F;
+    background-color: bisque;
+    text-decoration: none;
+    color: black;
+}
+select{
+    height: 35px;
+}
+.Catagories{
+    background-color: #FFD7BD;
+    padding: 30px 40px;
+    border-radius: 30px;
+}
+button{
+    background-color: #FFE3BD;
+}
+
+.container{
+    background-color: #FFD7BD;
+    padding: 30px 5px;
+    height: auto;
+    align-items: center;
+}
+.containe{
+    width: 90%;
+    background-color: #FFD9AE;
+    height: auto;
+    padding: 30px;
+}
+.contain{
+    width: 70%;
+    padding: 30px;
+}
+.contain button{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.Flash{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card{
+    background-color: white;
+    padding: 10px 10px;
+    width: 25%;
+    height: 300px;
+    
+}
 footer{
     background-color: #72533F;
     height: 160px;
+    border-top: 6px solid #FFD9AE;
+}
+
+
+
+
+@media(max-width:796px){
+    .the-navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
