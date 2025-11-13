@@ -7,6 +7,7 @@ const cardcontainer = document.getElementById("flashcard");
 const categoryinput = document.getElementById("inputcategory");
 const addcategorybtn = document.getElementById("add-category-btn");
 const filter = document.getElementById("filter");
+const optioned = document.getElementById("option")
 
 
 let cards =JSON.parse(localStorage.getItem("flashcards")) || [];
@@ -39,6 +40,12 @@ addcategorybtn.addEventListener("click" , () => {
     option.value = newcategory;
     option.textContent = newcategory;
     filter.appendChild(option);
+
+    const optionb = document.createElement("option");
+    optionb.value = newcategory;
+    optionb.textContent = newcategory;
+    optioned.appendChild(optionb);
+    
     
 
     categories.push(newcategory)
@@ -78,6 +85,17 @@ btnofpower.addEventListener("click" , ()=> {
 
  questioninput.value = "";
  answerinput.value = "";
+
+
+
+  const selected = optioned.value;
+    document.querySelectorAll(".flashcard").forEach(card => {
+        if (selected === "all" || card.dataset.drop === selected) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
 })
 
 window.addEventListener("DOMContentLoaded", () =>{
@@ -86,6 +104,12 @@ window.addEventListener("DOMContentLoaded", () =>{
         option.value = e;
         option.textContent = e;
         filter.appendChild(option);
+
+        const optionb = document.createElement("option");
+        optionb.value = e;
+        optionb.textContent = e;
+        optioned.appendChild(optionb);
+
     })
     
 
@@ -107,10 +131,10 @@ window.addEventListener("DOMContentLoaded", () =>{
 
 
 
-filter.addEventListener("change", ()=>{
-    const selected = filter.value;
+optioned.addEventListener("change", ()=>{
+    const selected = optioned.value;
     document.querySelectorAll(".flashcard").forEach(card =>{
-        if(card.dataset.drop === selected){
+        if(selected === "all" || card.dataset.drop === selected){
         card.style.display = "block"
     }
     else{
@@ -119,4 +143,4 @@ filter.addEventListener("change", ()=>{
     })
 })
 
-/*-------------------------------------------------------------------*/
+

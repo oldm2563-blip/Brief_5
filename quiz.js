@@ -1,14 +1,25 @@
 let currentQuestion = 0;
 let score = 0;
 let quizData = [];
-const result = document.getElementById("highscore")
+
+const result = document.getElementById("highscore");
+
+let highscores = parseInt(localStorage.getItem("high")) || 0;
+result.textContent = "Your Highest Score Is: " + highscores;
+
+
+
 async function loadQuiz() {
   const res = await fetch('quiz.json');
   quizData = await res.json();
+  console.log(quizData);
   showQuestion();
 }
-let highscores = parseInt(localStorage.getItem("high")) || 0;
-result.textContent = "Your Highest Score Is: " + highscores;
+
+
+
+
+
 function showQuestion() {
   const quizContainer = document.getElementById('quiz');
   const theoptions = document.getElementById('options');
